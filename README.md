@@ -1,17 +1,25 @@
-
 # Path-Find
 
-[![Build Status](https://travis-ci.org/petrofeed/path-find.svg?branch=master)](https://travis-ci.org/petrofeed/path-find)
+[![Build Status](https://travis-ci.org/tether/path-find.svg?branch=master)](https://travis-ci.org/tether/path-find)
 [![NPM](https://img.shields.io/npm/v/path-find.svg)](https://www.npmjs.com/package/path-find)
 [![Downloads](https://img.shields.io/npm/dm/path-find.svg)](http://npm-stat.com/charts.html?package=path-find)
 [![guidelines](https://tether.github.io/contribution-guide/badge-guidelines.svg)](https://github.com/tether/contribution-guide)
 
-This is a simple description.
+Find closest path in a URL-map object.
 
 ## Usage
 
 ```js
+const find = require('path-find')
 
+const map = {
+  '/user': 'hello user',
+  '/user/name': 'hello user/name',
+  '/user/name/bruno': 'hello user/name/bruno'
+}
+
+find('/user/name/olivier', map)
+// => hello user/name
 ```
 
 ## Installation
@@ -43,5 +51,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-  
-  
