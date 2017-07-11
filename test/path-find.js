@@ -28,6 +28,7 @@ test('should find closest path #2', assert => {
   assert.equal(find('/user/names/olivier', map), '/user')
 })
 
+
 test('should return falsy if path not found', assert => {
   assert.plan(1)
   const map = {
