@@ -1,0 +1,27 @@
+
+{
+  "name": "path-find",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tether/path-find.git"
+  },
+  "keywords": [
+    "tether"
+  ],
+  "author": "Petrofeed Inc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tether/path-find/issues"
+  },
+  "homepage": "https://github.com/tether/path-find#readme",
+  "devDependencies": {
+    "tape": "*"
+  }
+}
+  
