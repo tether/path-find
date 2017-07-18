@@ -9,14 +9,12 @@
  */
 
 module.exports = function (url, map) {
-  let result = map[url]
+  let result
   let path = url.split('/')
-  if (!result) {
-    while (path.length) {
-      path.pop()
-      result = map[path.join('/')]
-      if (result) return result
-    }
+  while (path.length) {
+    path.pop()
+    result = map[path.join('/') + '/']
+    if (result) return result
   }
   return result
 }
