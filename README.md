@@ -13,14 +13,15 @@ Find closest path in a URL-map object.
 const find = require('path-find')
 
 const map = {
-  '/user': 'hello user',
-  '/user/name': 'hello user/name',
-  '/user/name/bruno': 'hello user/name/bruno'
+  '/user/': 'hello user',
+  '/user/name/': 'hello user/name',
+  '/user/name/bruno/': 'hello user/name/bruno'
 }
 
-find('/user/name/olivier', map)
+find('/user/name/olivier/', map)
 // => hello user/name
 ```
+Path always have to finish with a `/` character.
 
 ## Installation
 

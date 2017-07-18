@@ -1,6 +1,6 @@
 {
   "name": "path-find",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Find closes path in a URL-map object",
   "main": "index.js",
   "scripts": {
